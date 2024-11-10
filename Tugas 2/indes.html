@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PERPUSTAKAAN BUKU - Manajemen Peminjaman</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PERPUSTAKAAN BUKU</h1>
+    <h2>Kelola buku dan peminjaman dengan mudah</h2>
+  </header>
+  <main>
+    <!-- Row untuk Manajemen Buku dan Daftar Buku -->
+    <div class="section-row">
+      <section id="manajemen-buku">
+        <h3>Manajemen Buku</h3>
+        <form id="form-tambah-buku">
+          <input type="text" id="judul-buku" placeholder="Judul Buku" required>
+          <input type="number" id="stok-buku" placeholder="Stok Buku" required>
+          <button type="submit">Tambah Buku</button>
+        </form>
+      </section>
+
+      <section id="daftar-buku">
+        <h3>Daftar Buku</h3>
+        <div class="card">
+          <p>Judul: Buku A</p>
+          <p>Stok: 5</p>
+        </div>
+        <div class="card">
+          <p>Judul: Buku B</p>
+          <p>Stok: 2</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Row untuk Peminjaman Buku dan Riwayat Peminjaman -->
+    <div class="section-row">
+      <section id="manajemen-peminjaman">
+        <h3>Peminjaman Buku</h3>
+        <form id="form-peminjaman">
+          <input type="text" id="nama-anggota" placeholder="Nama Anggota" required>
+          <input type="text" id="judul-buku-pinjaman" placeholder="Judul Buku" required>
+          <button type="submit">Pinjam Buku</button>
+        </form>
+      </section>
+
+      <section id="riwayat-peminjaman">
+        <h3>Riwayat Peminjaman</h3>
+        <div class="card">
+          <p>Nama Anggota: Budi</p>
+          <p>Judul Buku: Buku A</p>
+          <p>Tanggal Peminjaman: 12/11/2023</p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

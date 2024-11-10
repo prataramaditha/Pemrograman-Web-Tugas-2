@@ -1,0 +1,137 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('https://images.pexels.com/photos/1098601/pexels-photo-1098601.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #6c7dff;
+  color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header h2 {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Container untuk mengatur tata letak dua kolom */
+.section-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 2rem;
+}
+
+/* Menyesuaikan lebar setiap bagian */
+section {
+  flex: 1;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+h3 {
+  color: #4C5F6B;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, button {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input {
+  background: #f1f5f9;
+  border: 1px solid #e5e7eb;
+}
+
+button {
+  background: #6c7fff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #4141a0;
+}
+
+#daftar-buku, #riwayat-peminjaman {
+  max-height: 300px; /* Sesuaikan tinggi maksimal sesuai keinginan Anda */
+  overflow-y: auto; /* Tambahkan scrollbar vertikal */
+  padding-right: 1rem; /* Ruang ekstra untuk scrollbar */
+}
+
+.card {
+  position: relative; /* Menjadikan card sebagai elemen relatif */
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  margin-right: 1rem; /* Ruang antara teks dan tombol */
+}
+
+.card button {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #ff1a1a;
+}
