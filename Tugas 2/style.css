@@ -1,4 +1,4 @@
-/* Reset dasar */
+
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +40,7 @@ main {
   gap: 2rem;
 }
 
-/* Container untuk mengatur tata letak dua kolom */
+
 .section-row {
   display: flex;
   justify-content: space-between;
@@ -49,7 +49,7 @@ main {
   gap: 2rem;
 }
 
-/* Menyesuaikan lebar setiap bagian */
+
 section {
   flex: 1;
   background: rgb(255, 255, 255);
@@ -94,13 +94,13 @@ button:hover {
 }
 
 #daftar-buku, #riwayat-peminjaman {
-  max-height: 300px; /* Sesuaikan tinggi maksimal sesuai keinginan Anda */
-  overflow-y: auto; /* Tambahkan scrollbar vertikal */
-  padding-right: 1rem; /* Ruang ekstra untuk scrollbar */
+  max-height: 300px;
+  overflow-y: auto; 
+  padding-right: 1rem; 
 }
 
 .card {
-  position: relative; /* Menjadikan card sebagai elemen relatif */
+  position: relative; 
   background: #f1f5f9;
   border-radius: 8px;
   padding: 1rem;
@@ -119,7 +119,7 @@ button:hover {
 .card p {
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
-  margin-right: 1rem; /* Ruang antara teks dan tombol */
+  margin-right: 1rem; 
 }
 
 .card button {
